@@ -2,7 +2,10 @@ type Action = {
   type: string;
 };
 
-const userReducer = (action: Action, state = null) => {
+type State = null | string;
+
+// eslint-disable-next-line default-param-last
+const userReducer = (state: State = null, action: Action) => {
   switch (action.type) {
     default:
       return state;

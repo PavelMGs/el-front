@@ -11,8 +11,8 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
-    'prettier',
     'airbnb',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -50,6 +50,30 @@ module.exports = {
         jsx: 'never',
         ts: 'never',
         tsx: 'never',
+      },
+    ],
+    'react/jsx-filename-extension': 'off', // check this rule out later
+    'react/function-component-definition': 'off',
+    'arrow-body-style': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    'no-unused-vars': 'off',
+    'react/require-default-props': 'off',
+    'no-shadow': 'off',
+    'jsx-a11y/label-has-associated-control': [
+      'error',
+      {
+        required: {
+          some: ['nesting', 'id'],
+        },
+      },
+    ],
+    'jsx-a11y/label-has-for': [
+      'error',
+      {
+        required: {
+          some: ['nesting', 'id'],
+        },
       },
     ],
   },

@@ -1,0 +1,58 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 10px 5px 2px rgba(138, 149, 158, 0.2);
+  height: 150px;
+  width: 250px;
+  max-width: 90vw;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: $transition;
+  transform: translateY(0);
+  background-color: #fff;
+  margin: 0 8px 16px;
+
+  border-radius: 4px;
+  padding: 8px;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 5px 2px rgba(138, 149, 158, 0.4);
+  }
+
+  @include media('>=tablet') {
+    width: 300px;
+    height: 180px;
+    padding: 12px;
+  }
+
+  @include media('>=desktop') {
+    width: 450px;
+    height: 270px;
+    padding: 16px;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.ImagesContainer {
+  position: relative;
+  height: 60%;
+  width: 100%;
+  margin: auto 0;
+
+  @include media('>=tablet') {
+    height: 80%;
+  }
+
+  // @include media('>=desktop') {
+  //   width: 450px;
+  //   height: 80%;
+  //   padding: 16px;
+  // }
+}

@@ -1,0 +1,11 @@
+$sizes: 0;
+
+@for $i from 0 to 100 {
+  $sizes: append($sizes, #{$i});
+}
+
+// $i: 0;
+// @while $i < 30 {
+//   $i: $i + 0.01;
+//   $sizes: append($sizes, #{$i});
+// }

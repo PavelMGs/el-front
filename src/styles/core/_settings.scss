@@ -1,0 +1,4 @@
+// Base transition properties (use this for add the same transition effect between components)
+$transition-duration: 0.3s !default;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$transition: $transition-duration $transition-timing-function !default;

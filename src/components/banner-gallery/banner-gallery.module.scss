@@ -1,0 +1,49 @@
+$banner_width: 100vw;
+
+.root {
+  position: relative;
+  width: $banner_width;
+  overflow: hidden;
+}
+
+.ImagesContainer {
+  display: flex;
+  width: max-content;
+  transition: 800ms;
+}
+
+.Image {
+  width: $banner_width; 
+  height: auto;
+}
+
+.ControlList {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  list-style: none;
+
+  display: flex;
+
+  z-index: 1;
+}
+
+.ControlItem {
+  margin: 0 5px;
+}
+
+.ControlButton {
+  background: rgba(209, 203, 194, 0.618);
+  border: 0.5px solid rgba(85, 78, 78, 0.546);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+
+  &:hover {
+    background: rgb(209, 203, 194);
+    border-width: 1px;
+    transform: scale(1.25);
+  }
+}
