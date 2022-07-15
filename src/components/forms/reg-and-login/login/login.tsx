@@ -11,17 +11,12 @@ const LoginForm = () => {
     onSubmit: (values) => console.log(values),
   });
 
-  const hnChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
-    handleChange(e);
-  };
-
   return (
     <form onSubmit={handleSubmit}>
       <Input
         value={values.email}
         label="email"
-        onChange={hnChangeHandler}
+        onChange={handleChange}
         name="email"
       />
       <Input

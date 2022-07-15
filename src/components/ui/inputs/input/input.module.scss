@@ -1,3 +1,28 @@
-.root {
-  
+$input-border-color: $second-color;
+$input-border-color-active: $primary-color;
+$input-border-color-danger: $color-danger;
+
+$input-color-danger: $color-danger;
+
+.fieldset {
+  border: 1px solid $input-border-color;
+  border-radius: 4px;
+  padding: 0;
+  height: 50px;
+
+  &.active {
+    border-color: $input-border-color-active;
+  }
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: none;
+
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 50px;
+  padding-top: 0.5em;
 }
